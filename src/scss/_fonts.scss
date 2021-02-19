@@ -1,0 +1,16 @@
+//font-family: 'Lato', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Raleway', sans-serif;
+
+@include font-face('Lato', '../fonts/Lato/lato-black-webfont', 900);
+@include font-face('Lato', '../fonts/Lato/lato-regular-webfont', 400);
+
+@include font-face('Raleway', '../fonts/Raleway/Raleway-Bold', 700);
+@include font-face('Raleway', '..fonts/Raleway/Raleway-Regular', 400);
+
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-regular-webfont', 400);
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-black-webfont', 900);
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-bold-webfont', 700);
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-semi-bold-webfont', 600);
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-light-webfont', 300);
+@include font-face('Montserrat', '../fonts/Montserrat/montserrat-medium-webfont', 500);

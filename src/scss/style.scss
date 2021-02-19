@@ -1,0 +1,22 @@
+
+@import "variables";
+@import "mixin";
+@import "libs";
+@import "fonts";
+@import "nullstyle";
+
+h1 {
+	@include fonts(Raleway, 700, 150, rgb(255, 166, 0))
+}
+
+h2 {
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 150px;
+	line-height: 25px;
+}
+
+
+@import "header";
+@import "main";
+@import "footer";

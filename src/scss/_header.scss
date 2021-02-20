@@ -1,0 +1,164 @@
+.header {
+    position: relative;
+    padding-top: 38px;
+    background: {
+        image: url('../img/header.jpg');
+        repeat: no-repeat;
+        position: left top;
+        size: cover;
+    }
+    width: 100%;
+    height: 100vh;
+    min-height: 720px;
+    @include sm {
+        min-height: 568px;
+    }
+    .navbar {
+        @include md {
+            background-color: $yellow;
+        }
+        .navbar-brand {
+            @include fonts(Montserrat, 800, 34, $white);
+            letter-spacing: 1.67px;
+            padding: 16px 30px 28px 129px;
+            background-color: $yellow;
+            @include md {
+                padding-left: 30px;
+            }
+            @include sm {
+                padding-bottom: 16px;
+            }
+            span {
+                font-weight: 400;
+            }
+        }
+        .navbar-toggler {
+            display: none;
+            width: 78px;
+            height: 78px;
+            margin-left: auto;
+            background: {
+                color: $yellow;
+                image: url('../img/icons/menu.svg');
+                size: 20%;
+                position: center;
+                repeat: no-repeat;
+            }           
+            @include xl {
+                display: block;
+            }
+            @include sm {
+                background-size: 15%;
+                height: auto;
+            }
+        }
+        .navbar-collapse {
+            @include xl {
+                display: none;
+            }
+            .navbar-nav {
+                margin-left: 167px;
+                .nav-item {
+                    .nav-link {
+                        @include fonts(Lato, 400, 34, $white);
+                        display: block;
+                        padding: 0 32px;
+                        line-height: 60px;
+                        height: 78px;
+                        border: solid 4px transparent;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            border-color: $yellow;
+                        }
+    
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .title {
+        @include fonts(Montserrat, 900, 125, $white);
+        position: relative;
+        margin-top: -29px;
+        top: 50%;
+        transform: translate(0, -50%);
+        @include lg {
+            margin-top: 0;
+        }
+        h1 {
+            text-transform: uppercase;
+            line-height: 0.85;
+            padding-left: 100px;
+            @include xl {
+                padding-left: 0;
+                text-align: center;
+            }
+            @include lg {
+                font-size: 100px;
+            }
+            @include sm {
+                font-size: 75px;
+                line-height: 0.7;
+            }
+            @include xs {
+                font-size: 65px;
+            }
+            span {
+                font-weight: 400;
+                font-size: 104.2px;
+                letter-spacing: 10.42px;
+                @include lg {
+                    font-size: 75px;
+                }
+                @include sm {
+                    font-size: 50px;
+                }
+                @include xs {
+                    font-size: 40px;
+                    letter-spacing:  5px;
+                }
+            }
+        }
+        .btn {
+            font: {
+                weight: 600;
+                size: 37.5px;
+            }
+            color: $white;
+            background-color: $yellow;
+            text-transform: uppercase;
+            margin: auto 0 16px 26px;
+            padding: 24px 23px 16px 69px;
+            border: 4px solid $white;
+            @include xl {
+                margin: 40px auto;
+            }
+            @include sm {
+                font-size: 25px;
+                padding: 16px 25px;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            width: 100%;
+            height: 198px;
+            background-color: $yellow;
+            @include lg {
+                height: 160px;
+                top: -30px;
+            }
+            @include sm {
+                height: 112px;
+            }
+            @include xs {
+                height: 94px;
+                top: -20px;
+            }
+        }
+    }
+}

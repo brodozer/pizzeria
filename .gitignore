@@ -2,3 +2,4 @@ node_modules/
 prod/
 package-lock.json
 src/index.html
+src/css
